@@ -1,12 +1,24 @@
-<!--header-->
-<header>
-    <a href="#" class="logo">Noob.</a>
-    <nav class="menu">
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
-</header>
+<section class="bannerHome">
+    <div class="imgBxBannerHome">
+        <img src="{{ asset('assets/img/home/gaming-products.jpg') }}" alt="" class="active">
+        <img src="{{ asset('assets/img/home/minimalism-products.jpg') }}" alt="">
+    </div>
+
+    <div class="contentBxBannerHome">
+        <div class="active">
+            <h2>Slide Text One</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptates fuga doloremque ducimus, veritatis modi pariatur eligendi voluptatum temporibus omnis voluptate, nulla dolorum aliquid dolores eveniet incidunt reiciendis ipsa iusto!</p>
+            <a href="#">Details</a>
+        </div>
+        <div>
+            <h2>Slide Text Two</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptates fuga doloremque ducimus, veritatis modi pariatur eligendi voluptatum temporibus omnis voluptate, nulla dolorum aliquid dolores eveniet incidunt reiciendis ipsa iusto!</p>
+            <a href="#">Details</a>
+        </div>
+    </div>
+
+    <ul class="controlsBannerHome">
+        <li onclick="prevSlideBannerHome(); prevSlideBannerHomeText();"></li>
+        <li onclick="nextSlideBannerHome(); nextSlideBannerHomeText();"></li>
+    </ul>
+</section>
