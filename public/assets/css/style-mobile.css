@@ -1,0 +1,57 @@
+/* Media query para teléfonos móviles */
+@media only screen and (max-width: 767px) {
+    header .busquedaBotonMenu
+    {
+        left: 0;
+    }
+    .menuToggle
+    {
+        position: absolute;
+        display: block;
+        font-size: 2em;
+        cursor: pointer;
+        transform: translateX(30px);
+        z-index: 10;
+    }
+
+    header .navegacion,
+    header .carrito 
+    {
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        left: 100%;
+    }
+
+    header.open .navegacion
+    {
+        top: 80px;
+        opacity: 1;
+        visibility: visible;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: var(--white-color);
+        width: 100%;
+        height: calc(100vh - 80px);
+        padding: 40px;
+        border-top: 1px solid rgba(0,0,0,0.05);
+    }
+
+    header.open .navegacion li 
+    {
+        margin: 0;
+        padding: 40px 0;
+    }
+
+    header.open .navegacion li a 
+    {
+        font-size: 1.25em;
+    }
+
+    .ocultar 
+    {
+        display: none;
+    }
+}

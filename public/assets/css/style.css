@@ -5,49 +5,143 @@
     box-sizing: border-box;
 }
 
-body 
-{
-    background-color: rgb(255, 2, 2);
-}
-
 header 
 {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    z-index: 2;
-    padding: 30px 100px;
+    height: 80px;
+    background-color: var(--white-color);
+    z-index: 3;
 }
 
-header .log 
+header nav
 {
-    position: relative;
-    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+
+header .logo 
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--black-neutro-color);
     font-weight: 700;
     font-size: 2em;
     text-decoration: none;
 }
 
+header .menu,
 header ul
 {
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header ul li 
+header .iconosMenu  
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li,
+header .iconosMenu a
 {
     position: relative;
     list-style: none;
-    margin-left: 40px;
+}
+
+header ul li:not(:first-child),
+header .iconosMenu a
+{
+    margin-left: 30px;
 }
 
 header ul li a 
 {
-    color: #fff;
+    color: var(--black-neutro-color);
     text-decoration: none;
+}
+
+header .busquedaMenu 
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.5em;
+    z-index: 2;
+}
+
+header .busquedaBoxMenu 
+{
+    position: absolute;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: var(--white-color);
+    align-items: center;
+    padding: 0 30px;
+    transition: 0.5s ease-in-out;
+}
+
+header .busquedaBoxMenu.activo 
+{
+    right: 0;
+}
+
+header .busquedaBoxMenu input 
+{
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 50px;
+    color: var(--black-neutro-color);
+    font-size: 1.25em;
+    background-color: var(--white-color);
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+}
+
+header .busquedaBotonMenu
+{
+    position: relative;
+    left: 30px;
+    transition: 0.5s ease-in-out;
+}
+
+header .busquedaBotonMenu.activo 
+{
+    left: 0;
+}
+
+header .cerrarBotonMenu
+{
+    opacity: 0;
+    visibility: hidden;
+    scale: 0;
+}
+
+header .cerrarBotonMenu.activo 
+{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+    scale: 1;
+}
+
+/*
+    Menu
+*/
+
+.menuToggle
+{
+    position: relative;
+    display: none;
 }

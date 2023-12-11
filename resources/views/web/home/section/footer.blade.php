@@ -30,4 +30,20 @@
         j = (j - 1 + slidesContentBxBannerHome.length) % slidesContentBxBannerHome.length
         slidesContentBxBannerHome[j].classList.add('active')
     }
+
+    const controlsBannerHome = document.querySelector('.controlsBannerHome')
+    const controlsLiBannerHome = controlsBannerHome.getElementsByTagName('li')
+    let k = 0
+
+    function nextControlsLiBannerHome() {
+        controlsLiBannerHome[j].classList.remove('active')
+        j = (j + 1) % controlsLiBannerHome.length
+        controlsLiBannerHome[j].classList.add('active')
+    }
+
+    function prevControlsLiBannerHome() {
+        controlsLiBannerHome[j].classList.remove('active')
+        j = (j - 1 + controlsLiBannerHome.length) % controlsLiBannerHome.length
+        controlsLiBannerHome[j].classList.add('active')
+    }
 </script>

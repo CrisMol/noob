@@ -3,8 +3,24 @@
         Banner
     */
 
+    .descripcionHome {
+        position: relative;
+        top: 80px;
+        background-color: var(--white-color);
+        z-index: 2;
+    }
+
+    .descripcionHome .contenidoDescripcionHome {
+        width: 700px;
+        margin: auto;
+        text-align: center;
+        padding: 20px 50px;
+        height: 130px;
+    }
+
     .bannerHome {
         position: relative;
+        margin-top: 80px;
         width: 100%;
         min-height: 100vh;
     }
@@ -46,32 +62,24 @@
 
     .controlsBannerHome li {
         position: relative;
-        width: 80px;
-        height: 80px;
-        background-color: #fff;
+        width: 12px;
+        height: 12px;
+        margin: 10px;
         list-style: none;
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        background-color: var(--white-color);
+        border-radius: 50%;
+    }
+
+    .controlsBannerHome li.active {
+        background-color: var(--bright-pink-color);
     }
 
     .controlsBannerHome li:hover {
-        background-color: #ffeb3b;
-    }
-
-    .controlsBannerHome li:before {
-        content: '';
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        border-left: 3px solid #111;
-        border-bottom: 3px solid #111;
-        transform: rotate(45deg);
-    }
-
-    .controlsBannerHome li:nth-child(2):before {
-        transform: rotate(225deg);
+        background-color: var(--bright-pink-color);
     }
 
     /*
@@ -90,7 +98,7 @@
     .contentBxBannerHome div.active {
         display: block;
         padding: 30px;
-        padding-left: 100px;
+        padding-left: 50px;
         background: rgba(0, 0, 0, 0.2);
     }
 
