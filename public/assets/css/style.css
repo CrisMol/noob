@@ -28,10 +28,13 @@ header .logo
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    color: var(--black-neutro-color);
-    font-weight: 700;
     font-size: 2em;
-    text-decoration: none;
+}
+
+header .logo a 
+{
+    color: var(--black-neutro-color);
+    font-family: 'WindSong', cursive;
 }
 
 header .menu,
