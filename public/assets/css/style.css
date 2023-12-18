@@ -1,3 +1,8 @@
+/*
+    Tipografias
+*/
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Playfair+Display:ital,wght@0,400;1,500&display=swap');
+
 * 
 {
     margin: 0;
@@ -11,7 +16,6 @@ header
     top: 0;
     left: 0;
     width: 100%;
-    height: 80px;
     background-color: var(--white-color);
     z-index: 3;
 }
@@ -20,7 +24,7 @@ header nav
 {
     display: flex;
     justify-content: space-between;
-    padding: 30px 50px;
+    padding: 15px 50px;
 }
 
 header .logo 

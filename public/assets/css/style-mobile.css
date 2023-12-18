@@ -54,4 +54,12 @@
     {
         display: none;
     }
+
+    /*
+        Home
+    */
+    .descripcionHome .contenidoDescripcionHome 
+    {
+        width: 100%;
+    }
 }

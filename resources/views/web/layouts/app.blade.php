@@ -11,11 +11,12 @@
 
         <!--Estilos-->
         <link rel="stylesheet" href="{{ asset('assets/css/root.css') }}">
+        
+        @yield('head')
+
         <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
         <link rel="stylesheet" href="{{ asset('assets/css/style-mobile.css') }}">
         <link rel="stylesheet" href="{{ asset('assets/css/style-tablets.css') }}">
-
-        @yield('head')
 
     </head>
     <body>
@@ -33,12 +34,7 @@
                                 <!-- Agrega más elementos del menú según sea necesario -->
                             </ul>
                         </div>
-                
-                        <!-- Centro: Logo -->
-                        <div class="logo">
-                            <a href="#">Noob</a>
-                        </div>
-                
+            
                         <!-- Lado derecho: Iconos de búsqueda, redes sociales y carrito -->
                         <div class="iconosMenu">
                             <div class="busquedaMenu">

@@ -5,7 +5,7 @@
 
     .descripcionHome {
         position: relative;
-        top: 80px;
+        top: 50px;
         background-color: var(--white-color);
         z-index: 2;
     }
@@ -14,13 +14,22 @@
         width: 700px;
         margin: auto;
         text-align: center;
-        padding: 20px 50px;
-        height: 130px;
+        padding: 15px 50px;
+    }
+
+    .descripcionHome .contenidoDescripcionHome h1 {
+        font-size: 8em;
+        font-style: italic;
+        font-weight: 500;
+    }
+
+    .descripcionHome .contenidoDescripcionHome span {
+        font-family: 'Alegreya', serif;
+        font-size: 1.25em;
     }
 
     .bannerHome {
         position: relative;
-        margin-top: 80px;
         width: 100%;
         min-height: 100vh;
     }
@@ -102,9 +111,8 @@
         background: rgba(0, 0, 0, 0.2);
     }
 
-    .contentBxBannerHome div h2 {
-        color: #fff;
-        font-size: 2em;
+    .contentBxBannerHome div span {
+        color: var(--white-color);
     }
 
     .contentBxBannerHome div p {

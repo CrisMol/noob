@@ -1,6 +1,7 @@
 <section class="descripcionHome">
     <div class="contenidoDescripcionHome">
-        <h2>Somos una empresa Ecuatoriana dedicada a la venta de productos tecnológicos, hogar, juguetes y otros con la mejor asesoría del mercado.</h2>
+        <h1>Noob</h1>
+        <span>Compra sin Esfuerzo, Vive con Estilo: La mejor tecnología al alcance de tu mano</span>
     </div>
 </section>
 
