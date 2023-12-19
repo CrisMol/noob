@@ -5,7 +5,6 @@
 
     .descripcionHome {
         position: relative;
-        top: 50px;
         background-color: var(--white-color);
         z-index: 2;
     }
@@ -14,7 +13,7 @@
         width: 700px;
         margin: auto;
         text-align: center;
-        padding: 15px 50px;
+        padding: 15px 30px;
     }
 
     .descripcionHome .contenidoDescripcionHome h1 {
@@ -25,7 +24,7 @@
 
     .descripcionHome .contenidoDescripcionHome span {
         font-family: 'Alegreya', serif;
-        font-size: 1.25em;
+        font-size: 1.10em;
     }
 
     .bannerHome {
@@ -71,8 +70,8 @@
 
     .controlsBannerHome li {
         position: relative;
-        width: 12px;
-        height: 12px;
+        width: 15px;
+        height: 15px;
         margin: 10px;
         list-style: none;
         display: flex;
@@ -84,11 +83,11 @@
     }
 
     .controlsBannerHome li.active {
-        background-color: var(--bright-pink-color);
+        background-color: var(--green-midnight-color);
     }
 
     .controlsBannerHome li:hover {
-        background-color: var(--bright-pink-color);
+        background-color: var(--green-midnight-color);
     }
 
     /*
@@ -116,20 +115,13 @@
     }
 
     .contentBxBannerHome div p {
-        color: #fff;
+        color: var(--white-color);
         font-size: 1.1em;
+        margin-bottom: 30px;
     }
 
-    .contentBxBannerHome div a {
-        color: #111;
-        font-size: 1.1em;
-        display: inline-block;
-        padding: 10px 30px; 
-        background-color: #fff;
-        margin-top: 10px;
-        font-weight: 500;
-        text-decoration: none;
-        letter-spacing: 2px;
-        text-transform: uppercase;
+    .contentBxBannerHome div a,
+    .contentBxBannerHome div h2 {
+        color: var(--white-color);
     }
 </style>
