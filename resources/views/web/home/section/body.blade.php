@@ -9,20 +9,20 @@
 
 <section class="bannerHome">
     <div class="imgBxBannerHome">
-        <img src="{{ asset('assets/img/home/productos-para-jugadores-gadgets-tecnologicos-noob.jpg') }}" alt="" class="active">
-        <img src="{{ asset('assets/img/home/minimalism-products.jpg') }}" alt="">
+        <img src="{{ asset('assets/img/home/set-up-minimalista.jpg') }}" alt="" class="active">
+        <img src="{{ asset('assets/img/home/accesorios-de-domotico.jpg') }}" alt="">
     </div>
 
     <div class="contentBxBannerHome">
         <div class="active">
-            <h2>Gadgets para Gamers</h2>
-            <p>Encuentra los mejores artículos para armar un set up totalmente personalizado</p>
+            <h2>Arma tu propio Set Up !!</h2>
+            <p>Encuentra los mejores accesorios para armar tu propia estación de descanso, desde componentes para computadora, hasta gadgets tecnológicos.</p>
             <a href="#" class="boton">Ver Colección</a>
         </div>
         <div>
-            <h2>Slide Text Two</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptates fuga doloremque ducimus, veritatis modi pariatur eligendi voluptatum temporibus omnis voluptate, nulla dolorum aliquid dolores eveniet incidunt reiciendis ipsa iusto!</p>
-            <a href="#">Details</a>
+            <h2>Un hogar Inteligente</h2>
+            <p>Haz que tu casa sea inteligente con los mejores productos de dómotica, verificados y recomendados por nuestros clientes.</p>
+            <a href="#" class="boton">Ver Colección</a>
         </div>
     </div>
 
